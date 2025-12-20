@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kron Family Hub – EnteleKRON Ecosystem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kron Family Hub: eKRON, mineKRON, soviKRON, alviKRON resmi bağlantılar ve doğrulama merkezi." />
+  <style>
+    :root{
+      --bg:#f5f5f7;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --line:#e5e7eb;
+      --radius:18px;
+      --accent:#111827;
+      --accent2:#2563eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background: radial-gradient(circle at top, #eaf2ff, var(--bg) 55%);
+      color:var(--text);
+    }
+    a{color:var(--accent2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    header{
+      padding:18px 6vw;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .logo{
+      font-weight:800;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+      font-size:.95rem;
+      color:var(--accent);
+    }
+    nav a{margin-left:16px;color:var(--muted);font-size:.92rem}
+    main{
+      flex:1;
+      padding:24px 6vw 48px;
+      display:grid;
+      grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+      gap:28px;
+      align-items:start;
+    }
+    @media(max-width:900px){
+      main{grid-template-columns:1fr}
+      nav a{margin-left:0;margin-right:14px}
+    }
+    .hero{
+      background:linear-gradient(135deg,#111827,#1d4ed8);
+      color:#fff;
+      border-radius:22px;
+      padding:22px;
+      box-shadow:0 18px 40px rgba(15,23,42,.12);
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:5px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      font-size:.78rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    h1{margin:12px 0 10px;font-size:clamp(2rem,3.2vw,2.8rem);line-height:1.12}
+    .sub{margin:0 0 16px;color:rgba(255,255,255,.82);max-width:720px;line-height:1.65}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+      margin-top:16px;
+    }
+    @media(max-width:520px){.hero-grid{grid-template-columns:1fr}}
+    .hero-card{
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:16px;
+      padding:12px;
+    }
+    .hero-card .t{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+    .hero-card .v{margin-top:6px;font-weight:600}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 14px 35px rgba(15,23,42,.08);
+      border:1px solid var(--line);
+    }
+    .title{
+      font-size:.9rem;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+    .list{display:grid;gap:10px}
+    .row{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+      background:#fff;
+    }
+    .row strong{font-size:1rem}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:.82rem;
+      background:#fff;
+    }
+    .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .btn{
+      padding:9px 16px;
+      border-radius:999px;
+      border:1px solid transparent;
+      background:#fff;
+      color:var(--accent);
+      font-weight:600;
+      font-size:.92rem;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .btn.primary{background:#111827;color:#fff}
+    .btn.secondary{border-color:rgba(255,255,255,.30);background:transparent;color:#fff}
+    .note{
+      font-size:.88rem;
+      color:var(--muted);
+      line-height:1.6;
+      margin-top:10px;
+    }
+    footer{
+      padding:14px 6vw 22px;
+      font-size:.82rem;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+  <header>
+    <div class="logo">Kron Family Hub</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#coins">Coins</a>
+      <a href="#verify">Verify</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="hero">
+        <div class="pill">EnteleKRON Ecosystem • Kron Family</div>
+        <h1>Resmi bağlantılar, doğrulama ve şeffaflık merkezi.</h1>
+        <p class="sub">
+          Bu sayfa, Kron Family coin’leri için <b>tek resmi “hub”</b> olarak tasarlanmıştır.
+          Buradan yalnızca resmi domainlere gidin ve her zaman sözleşme adreslerini “Verify” sayfasından doğrulayın.
+          Kron Family coin’leri ileride EnteleKRON mainnet’e taşınabilir (migration planı).
+        </p>
+
+        <div class="btnrow">
+          <a class="btn primary" href="#coins">Kron Family Coins</a>
+          <a class="btn secondary" href="#verify">Official Verification</a>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-card">
+            <div class="t">Standart Satış Prosedürü</div>
+            <div class="v">14 gün önceden ilan + max %10</div>
+          </div>
+          <div class="hero-card">
+            <div class="t">Vesting & Locks</div>
+            <div class="v">Founder 6M / 12M + Ecosystem 12M</div>
+          </div>
+          <div class="hero-card">
+            <div class="t">Risk</div>
+            <div class="v">Memecoin = yüksek volatilite</div>
+          </div>
+          <div class="hero-card">
+            <div class="t">Resmi Kaynak</div>
+            <div class="v">Sadece bu hub + coin siteleri</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="title">Kısa Açıklama</div>
+        <div class="note">
+          Kron Family coin’leri; topluluk, kültür ve deney amaçlıdır. Her coin kendi likiditesine,
+          kendi satış planına ve kendi kilit sözleşmelerine sahip olabilir. Tüm projelerde temel prensip:
+          <b>şeffaflık</b>, <b>kademeli açılış</b> ve <b>dump karşıtı prosedür</b>.
+        </div>
+        <div class="chips">
+          <span class="chip">High Transparency</span>
+          <span class="chip">Anti-Dump Policy</span>
+          <span class="chip">Future Migration</span>
+          <span class="chip">Public Announcements</span>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div id="coins" class="card" style="margin-bottom:16px">
+        <div class="title">Kron Family Coins</div>
+
+        <div class="list">
+          <div class="row">
+            <div>
+              <strong>eKRON</strong><br/>
+              <span style="color:var(--muted);font-size:.9rem;">Primary Kron Family memecoin</span>
+            </div>
+            <div>
+              <a href="https://ekron.network" target="_blank" rel="noopener">ekron.network →</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <strong>mineKRON</strong><br/>
+              <span style="color:var(--muted);font-size:.9rem;">Mining / energy narrative memecoin</span>
+            </div>
+            <div>
+              <a href="https://minekron.com" target="_blank" rel="noopener">minekron.com →</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <strong>soviKRON</strong><br/>
+              <span style="color:var(--muted);font-size:.9rem;">SOVRA-linked community memecoin</span>
+            </div>
+            <div>
+              <a href="https://sovikron.com" target="_blank" rel="noopener">sovikron.com →</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <strong>alviKRON</strong><br/>
+              <span style="color:var(--muted);font-size:.9rem;">Lifestyle / culture memecoin</span>
+            </div>
+            <div>
+              <a href="https://alvikron.com" target="_blank" rel="noopener">alvikron.com →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          Not: Domain uzantıları (.com / .network) farklı olabilir. Önemli olan: <b>resmi doğrulama sayfası</b> ve
+          aynı standart prosedürlerin uygulanmasıdır.
+        </div>
+      </div>
+
+      <div id="verify" class="card" style="margin-bottom:16px">
+        <div class="title">Official Verification</div>
+        <div class="note">
+          Her coin’in contract adresi, lock sözleşmeleri ve resmi cüzdanları coin sitelerindeki
+          <b>/verify</b> sayfasında yayınlanır. Bu hub’dan coin sitelerinin verify sayfalarına gidin.
+        </div>
+        <div class="chips">
+          <span class="chip"><a href="https://ekron.network/verify/" target="_blank" rel="noopener">eKRON Verify</a></span>
+          <span class="chip"><a href="https://minekron.com/verify/" target="_blank" rel="noopener">mineKRON Verify</a></span>
+          <span class="chip"><a href="https://sovikron.com/verify/" target="_blank" rel="noopener">soviKRON Verify</a></span>
+          <span class="chip"><a href="https://alvikron.com/verify/" target="_blank" rel="noopener">alviKRON Verify</a></span>
+        </div>
+      </div>
+
+      <div id="links" class="card">
+        <div class="title">Ecosystem Links</div>
+        <div class="list">
+          <div class="row">
+            <div><strong>TVK Group</strong><br/><span style="color:var(--muted);font-size:.9rem;">Corporate</span></div>
+            <div><a href="https://tvk.group" target="_blank" rel="noopener">tvk.group →</a></div>
+          </div>
+          <div class="row">
+            <div><strong>EnteleKRON</strong><br/><span style="color:var(--muted);font-size:.9rem;">Core ecosystem</span></div>
+            <div><a href="https://entelekron.org" target="_blank" rel="noopener">entelekron.org →</a></div>
+          </div>
+          <div class="row">
+            <div><strong>SOVRA</strong><br/><span style="color:var(--muted);font-size:.9rem;">Sovereign AI</span></div>
+            <div><a href="https://sovra.network" target="_blank" rel="noopener">sovra.network →</a></div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          İletişim: <a href="mailto:hq@tvk.group">hq@tvk.group</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <span>© Kron Family Hub • EnteleKRON Ecosystem</span>
+    <span>Bilgilendirme amaçlıdır • Finansal tavsiye değildir</span>
+  </footer>
+</div>
+</body>
+</html>
