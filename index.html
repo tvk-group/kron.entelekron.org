@@ -1,323 +1,299 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Kron Family Hub – EnteleKRON Ecosystem</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kron Family Hub: eKRON, mineKRON, soviKRON, alviKRON resmi bağlantılar ve doğrulama merkezi." />
-  <style>
-    :root{
-      --bg:#f5f5f7;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#64748b;
-      --line:#e5e7eb;
-      --radius:18px;
-      --accent:#111827;
-      --accent2:#2563eb;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background: radial-gradient(circle at top, #eaf2ff, var(--bg) 55%);
-      color:var(--text);
-    }
-    a{color:var(--accent2);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .page{min-height:100vh;display:flex;flex-direction:column}
-    header{
-      padding:18px 6vw;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:14px;
-      flex-wrap:wrap;
-    }
-    .logo{
-      font-weight:800;
-      letter-spacing:.10em;
-      text-transform:uppercase;
-      font-size:.95rem;
-      color:var(--accent);
-    }
-    nav a{margin-left:16px;color:var(--muted);font-size:.92rem}
-    main{
-      flex:1;
-      padding:24px 6vw 48px;
-      display:grid;
-      grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
-      gap:28px;
-      align-items:start;
-    }
-    @media(max-width:900px){
-      main{grid-template-columns:1fr}
-      nav a{margin-left:0;margin-right:14px}
-    }
-    .hero{
-      background:linear-gradient(135deg,#111827,#1d4ed8);
-      color:#fff;
-      border-radius:22px;
-      padding:22px;
-      box-shadow:0 18px 40px rgba(15,23,42,.12);
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:5px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.12);
-      font-size:.78rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
-    h1{margin:12px 0 10px;font-size:clamp(2rem,3.2vw,2.8rem);line-height:1.12}
-    .sub{margin:0 0 16px;color:rgba(255,255,255,.82);max-width:720px;line-height:1.65}
-    .hero-grid{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:10px;
-      margin-top:16px;
-    }
-    @media(max-width:520px){.hero-grid{grid-template-columns:1fr}}
-    .hero-card{
-      background:rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.16);
-      border-radius:16px;
-      padding:12px;
-    }
-    .hero-card .t{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
-    .hero-card .v{margin-top:6px;font-weight:600}
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:0 14px 35px rgba(15,23,42,.08);
-      border:1px solid var(--line);
-    }
-    .title{
-      font-size:.9rem;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      color:var(--muted);
-      margin-bottom:10px;
-    }
-    .list{display:grid;gap:10px}
-    .row{
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:12px;
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:center;
-      flex-wrap:wrap;
-      background:#fff;
-    }
-    .row strong{font-size:1rem}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{
-      padding:5px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      color:var(--muted);
-      font-size:.82rem;
-      background:#fff;
-    }
-    .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-    .btn{
-      padding:9px 16px;
-      border-radius:999px;
-      border:1px solid transparent;
-      background:#fff;
-      color:var(--accent);
-      font-weight:600;
-      font-size:.92rem;
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-    }
-    .btn.primary{background:#111827;color:#fff}
-    .btn.secondary{border-color:rgba(255,255,255,.30);background:transparent;color:#fff}
-    .note{
-      font-size:.88rem;
-      color:var(--muted);
-      line-height:1.6;
-      margin-top:10px;
-    }
-    footer{
-      padding:14px 6vw 22px;
-      font-size:.82rem;
-      color:var(--muted);
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:10px;
-      border-top:1px solid var(--line);
-      background:#fff;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>KRON Family — Official Ecosystem Hub</title>
+  <meta name="description" content="The official gateway to the KRON Family ecosystem: verified project websites, transparent standards, contract verification, and multilingual access." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#050816" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="google" content="notranslate" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KRON Family" />
+  <meta property="og:title" content="KRON Family — Official Ecosystem Hub" />
+  <meta property="og:description" content="Official project websites, verification links, transparency standards, and multilingual access for the KRON Family ecosystem." />
+  <meta property="og:url" content="https://kron.entelekron.org/" />
+  <meta property="og:image" content="https://www.entelekron.org/assets/ENTELEKRON_logo_512x512.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://kron.entelekron.org/" />
+  <link rel="alternate" hreflang="x-default" href="https://kron.entelekron.org/" />
+  <link rel="alternate" hreflang="en" href="https://kron.entelekron.org/" />
+  <link rel="alternate" hreflang="tr" href="https://kron.entelekron.org/?lang=tr" />
+  <link rel="alternate" hreflang="de" href="https://kron.entelekron.org/?lang=de" />
+  <link rel="alternate" hreflang="fr" href="https://kron.entelekron.org/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://kron.entelekron.org/?lang=es" />
+  <link rel="alternate" hreflang="it" href="https://kron.entelekron.org/?lang=it" />
+  <link rel="alternate" hreflang="pt" href="https://kron.entelekron.org/?lang=pt" />
+  <link rel="alternate" hreflang="nl" href="https://kron.entelekron.org/?lang=nl" />
+  <link rel="alternate" hreflang="sv" href="https://kron.entelekron.org/?lang=sv" />
+  <link rel="alternate" hreflang="no" href="https://kron.entelekron.org/?lang=no" />
+  <link rel="alternate" hreflang="da" href="https://kron.entelekron.org/?lang=da" />
+  <link rel="alternate" hreflang="fi" href="https://kron.entelekron.org/?lang=fi" />
+  <link rel="alternate" hreflang="pl" href="https://kron.entelekron.org/?lang=pl" />
+  <link rel="alternate" hreflang="ro" href="https://kron.entelekron.org/?lang=ro" />
+  <link rel="alternate" hreflang="uk" href="https://kron.entelekron.org/?lang=uk" />
+  <link rel="alternate" hreflang="ru" href="https://kron.entelekron.org/?lang=ru" />
+  <link rel="alternate" hreflang="el" href="https://kron.entelekron.org/?lang=el" />
+  <link rel="alternate" hreflang="ar" href="https://kron.entelekron.org/?lang=ar" />
+  <link rel="alternate" hreflang="he" href="https://kron.entelekron.org/?lang=he" />
+  <link rel="alternate" hreflang="fa" href="https://kron.entelekron.org/?lang=fa" />
+  <link rel="alternate" hreflang="hi" href="https://kron.entelekron.org/?lang=hi" />
+  <link rel="alternate" hreflang="bn" href="https://kron.entelekron.org/?lang=bn" />
+  <link rel="alternate" hreflang="ur" href="https://kron.entelekron.org/?lang=ur" />
+  <link rel="alternate" hreflang="zh" href="https://kron.entelekron.org/?lang=zh" />
+  <link rel="alternate" hreflang="ja" href="https://kron.entelekron.org/?lang=ja" />
+  <link rel="alternate" hreflang="ko" href="https://kron.entelekron.org/?lang=ko" />
+  <link rel="alternate" hreflang="id" href="https://kron.entelekron.org/?lang=id" />
+  <link rel="alternate" hreflang="ms" href="https://kron.entelekron.org/?lang=ms" />
+  <link rel="alternate" hreflang="vi" href="https://kron.entelekron.org/?lang=vi" />
+  <link rel="alternate" hreflang="th" href="https://kron.entelekron.org/?lang=th" />
+  <link rel="alternate" hreflang="sw" href="https://kron.entelekron.org/?lang=sw" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%235de4ff'/%3E%3Cstop offset='1' stop-color='%239a83ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%23050816'/%3E%3Cpath d='M32 10 54 32 32 54 10 32Z' fill='none' stroke='url(%23g)' stroke-width='5'/%3E%3Cpath d='M32 20 44 32 32 44 20 32Z' fill='url(%23g)'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/assets/site.css?v=20260801" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "KRON Family",
+    "url": "https://kron.entelekron.org/",
+    "description": "Official project and verification hub for the KRON Family ecosystem.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TVK Group",
+      "url": "https://tvk.group"
+    },
+    "inLanguage": ["en","tr","de","fr","es","it","pt","nl","sv","no","da","fi","pl","ro","uk","ru","el","ar","he","fa","hi","bn","ur","zh","ja","ko","id","ms","vi","th","sw"]
+  }
+  </script>
 </head>
+<body class="notranslate" translate="no" data-title-key="metaTitle" data-description-key="metaDescription">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-<body>
-<div class="page">
-  <header>
-    <div class="logo">Kron Family Hub</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#coins">Coins</a>
-      <a href="#verify">Verify</a>
-      <a href="#links">Links</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="KRON Family home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <span class="brand-title">KRON Family</span>
+          <span class="brand-subtitle">EnteleKRON Ecosystem</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#standards" data-i18n="navStandards">Standards</a>
+        <a href="#verify" data-i18n="navVerify">Verify</a>
+      </nav>
+
+      <div class="language-control">
+        <label class="visually-hidden" for="language-select" data-i18n="language">Language</label>
+        <select class="language-select" id="language-select" data-i18n-aria="language" aria-label="Language"></select>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <div class="hero">
-        <div class="pill">EnteleKRON Ecosystem • Kron Family</div>
-        <h1>Resmi bağlantılar, doğrulama ve şeffaflık merkezi.</h1>
-        <p class="sub">
-          Bu sayfa, Kron Family coin’leri için <b>tek resmi “hub”</b> olarak tasarlanmıştır.
-          Buradan yalnızca resmi domainlere gidin ve her zaman sözleşme adreslerini “Verify” sayfasından doğrulayın.
-          Kron Family coin’leri ileride EnteleKRON mainnet’e taşınabilir (migration planı).
-        </p>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="heroEyebrow">Official ecosystem gateway</div>
+          <h1><span class="gradient-text" data-i18n="heroTitle">One family. Distinct worlds. Verified at the source.</span></h1>
+          <p class="hero-lead" data-i18n="heroLead">Explore the official KRON Family project websites, verification pages, transparency standards, and ecosystem connections from one trusted multilingual hub.</p>
 
-        <div class="btnrow">
-          <a class="btn primary" href="#coins">Kron Family Coins</a>
-          <a class="btn secondary" href="#verify">Official Verification</a>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">
+              <span data-i18n="heroPrimary">Explore projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 14 0M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn" href="#verify">
+              <span data-i18n="heroSecondary">Open verification center</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V7l-8-4Z" /><path d="m9 12 2 2 4-4" /></svg>
+            </a>
+          </div>
+
+          <div class="trust-row" aria-label="KRON standards">
+            <div class="trust-pill"><strong data-i18n="heroTrust1Title">Official sources</strong><span data-i18n="heroTrust1Text">Curated project links</span></div>
+            <div class="trust-pill"><strong data-i18n="heroTrust2Title">Verification first</strong><span data-i18n="heroTrust2Text">Check before interaction</span></div>
+            <div class="trust-pill"><strong data-i18n="heroTrust3Title">Transparent policy</strong><span data-i18n="heroTrust3Text">Published standards</span></div>
+            <div class="trust-pill"><strong data-i18n="heroTrust4Title">31 languages</strong><span data-i18n="heroTrust4Text">Authored static translations</span></div>
+          </div>
         </div>
 
-        <div class="hero-grid">
-          <div class="hero-card">
-            <div class="t">Standart Satış Prosedürü</div>
-            <div class="v">14 gün önceden ilan + max %10</div>
-          </div>
-          <div class="hero-card">
-            <div class="t">Vesting & Locks</div>
-            <div class="v">Founder 6M / 12M + Ecosystem 12M</div>
-          </div>
-          <div class="hero-card">
-            <div class="t">Risk</div>
-            <div class="v">Memecoin = yüksek volatilite</div>
-          </div>
-          <div class="hero-card">
-            <div class="t">Resmi Kaynak</div>
-            <div class="v">Sadece bu hub + coin siteleri</div>
-          </div>
-        </div>
-      </div>
+        <div class="hero-visual" aria-label="Floating previews of KRON Family websites">
+          <div class="floating-stage">
+            <a class="site-preview one" href="https://ekron.network" aria-label="Open eKRON website">
+              <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">ekron.network</span></div>
+              <div class="preview-body" data-theme="ekron">
+                <div class="preview-label"><span data-i18n="floatLabelOfficial">Official project</span><span class="preview-status" data-i18n="floatStatusLive">Live</span></div>
+                <div class="preview-title">eKRON</div>
+                <p class="preview-copy" data-i18n="projectEkron">The primary community asset within the KRON Family.</p>
+                <span class="preview-button" data-i18n="viewSite">View website</span>
+                <div class="preview-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </a>
 
-      <div class="card" style="margin-top:16px">
-        <div class="title">Kısa Açıklama</div>
-        <div class="note">
-          Kron Family coin’leri; topluluk, kültür ve deney amaçlıdır. Her coin kendi likiditesine,
-          kendi satış planına ve kendi kilit sözleşmelerine sahip olabilir. Tüm projelerde temel prensip:
-          <b>şeffaflık</b>, <b>kademeli açılış</b> ve <b>dump karşıtı prosedür</b>.
-        </div>
-        <div class="chips">
-          <span class="chip">High Transparency</span>
-          <span class="chip">Anti-Dump Policy</span>
-          <span class="chip">Future Migration</span>
-          <span class="chip">Public Announcements</span>
+            <a class="site-preview two" href="https://minekron.com" aria-label="Open mineKRON website">
+              <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">minekron.com</span></div>
+              <div class="preview-body" data-theme="mine">
+                <div class="preview-label"><span data-i18n="floatLabelOfficial">Official project</span><span class="preview-status" data-i18n="floatStatusLive">Live</span></div>
+                <div class="preview-title">mineKRON</div>
+                <p class="preview-copy" data-i18n="projectMine">A mining and energy inspired community world.</p>
+                <span class="preview-button" data-i18n="viewSite">View website</span>
+                <div class="preview-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </a>
+
+            <a class="site-preview three" href="https://sovikron.com" aria-label="Open soviKRON website">
+              <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">sovikron.com</span></div>
+              <div class="preview-body" data-theme="sovi">
+                <div class="preview-label"><span data-i18n="floatLabelOfficial">Official project</span><span class="preview-status" data-i18n="floatStatusLive">Live</span></div>
+                <div class="preview-title">soviKRON</div>
+                <p class="preview-copy" data-i18n="projectSovi">A sovereign intelligence inspired community project.</p>
+                <span class="preview-button" data-i18n="viewSite">View website</span>
+                <div class="preview-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </a>
+
+            <a class="site-preview four" href="https://alvikron.com" aria-label="Open alviKRON website">
+              <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">alvikron.com</span></div>
+              <div class="preview-body" data-theme="alvi">
+                <div class="preview-label"><span data-i18n="floatLabelOfficial">Official project</span><span class="preview-status" data-i18n="floatStatusLive">Live</span></div>
+                <div class="preview-title">alviKRON</div>
+                <p class="preview-copy" data-i18n="projectAlvi">A lifestyle, culture, and creative community project.</p>
+                <span class="preview-button" data-i18n="viewSite">View website</span>
+                <div class="preview-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <aside>
-      <div id="coins" class="card" style="margin-bottom:16px">
-        <div class="title">Kron Family Coins</div>
-
-        <div class="list">
-          <div class="row">
-            <div>
-              <strong>eKRON</strong><br/>
-              <span style="color:var(--muted);font-size:.9rem;">Primary Kron Family memecoin</span>
-            </div>
-            <div>
-              <a href="https://ekron.network" target="_blank" rel="noopener">ekron.network →</a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div>
-              <strong>mineKRON</strong><br/>
-              <span style="color:var(--muted);font-size:.9rem;">Mining / energy narrative memecoin</span>
-            </div>
-            <div>
-              <a href="https://minekron.com" target="_blank" rel="noopener">minekron.com →</a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div>
-              <strong>soviKRON</strong><br/>
-              <span style="color:var(--muted);font-size:.9rem;">SOVRA-linked community memecoin</span>
-            </div>
-            <div>
-              <a href="https://sovikron.com" target="_blank" rel="noopener">sovikron.com →</a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div>
-              <strong>alviKRON</strong><br/>
-              <span style="color:var(--muted);font-size:.9rem;">Lifestyle / culture memecoin</span>
-            </div>
-            <div>
-              <a href="https://alvikron.com" target="_blank" rel="noopener">alvikron.com →</a>
-            </div>
-          </div>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="projectsEyebrow">The KRON worlds</div>
+          <h2 data-i18n="projectsTitle">Different identities, one transparent ecosystem.</h2>
+          <p data-i18n="projectsLead">Each project has its own visual language and community narrative while sharing the same verification-first approach.</p>
         </div>
 
-        <div class="note" style="margin-top:12px">
-          Not: Domain uzantıları (.com / .network) farklı olabilir. Önemli olan: <b>resmi doğrulama sayfası</b> ve
-          aynı standart prosedürlerin uygulanmasıdır.
-        </div>
-      </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div>
+              <div class="project-top"><span class="project-index">01 / eKRON</span><span class="project-orb" aria-hidden="true"></span></div>
+              <h3>eKRON</h3>
+              <p data-i18n="projectEkron">The primary community asset within the KRON Family.</p>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://ekron.network"><span data-i18n="viewSite">View website</span> ↗</a>
+              <a class="text-link" href="https://ekron.network/verify/"><span data-i18n="verifyContract">Verify contracts</span> ↗</a>
+            </div>
+          </article>
 
-      <div id="verify" class="card" style="margin-bottom:16px">
-        <div class="title">Official Verification</div>
-        <div class="note">
-          Her coin’in contract adresi, lock sözleşmeleri ve resmi cüzdanları coin sitelerindeki
-          <b>/verify</b> sayfasında yayınlanır. Bu hub’dan coin sitelerinin verify sayfalarına gidin.
-        </div>
-        <div class="chips">
-          <span class="chip"><a href="https://ekron.network/verify/" target="_blank" rel="noopener">eKRON Verify</a></span>
-          <span class="chip"><a href="https://minekron.com/verify/" target="_blank" rel="noopener">mineKRON Verify</a></span>
-          <span class="chip"><a href="https://sovikron.com/verify/" target="_blank" rel="noopener">soviKRON Verify</a></span>
-          <span class="chip"><a href="https://alvikron.com/verify/" target="_blank" rel="noopener">alviKRON Verify</a></span>
+          <article class="project-card mine reveal">
+            <div>
+              <div class="project-top"><span class="project-index">02 / mineKRON</span><span class="project-orb" aria-hidden="true"></span></div>
+              <h3>mineKRON</h3>
+              <p data-i18n="projectMine">A mining and energy inspired community world.</p>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://minekron.com"><span data-i18n="viewSite">View website</span> ↗</a>
+              <a class="text-link" href="https://minekron.com/verify/"><span data-i18n="verifyContract">Verify contracts</span> ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card sovi reveal">
+            <div>
+              <div class="project-top"><span class="project-index">03 / soviKRON</span><span class="project-orb" aria-hidden="true"></span></div>
+              <h3>soviKRON</h3>
+              <p data-i18n="projectSovi">A sovereign intelligence inspired community project.</p>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://sovikron.com"><span data-i18n="viewSite">View website</span> ↗</a>
+              <a class="text-link" href="https://sovikron.com/verify/"><span data-i18n="verifyContract">Verify contracts</span> ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card alvi reveal">
+            <div>
+              <div class="project-top"><span class="project-index">04 / alviKRON</span><span class="project-orb" aria-hidden="true"></span></div>
+              <h3>alviKRON</h3>
+              <p data-i18n="projectAlvi">A lifestyle, culture, and creative community project.</p>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://alvikron.com"><span data-i18n="viewSite">View website</span> ↗</a>
+              <a class="text-link" href="https://alvikron.com/verify/"><span data-i18n="verifyContract">Verify contracts</span> ↗</a>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div id="links" class="card">
-        <div class="title">Ecosystem Links</div>
-        <div class="list">
-          <div class="row">
-            <div><strong>TVK Group</strong><br/><span style="color:var(--muted);font-size:.9rem;">Corporate</span></div>
-            <div><a href="https://tvk.group" target="_blank" rel="noopener">tvk.group →</a></div>
+    <section class="section" id="standards">
+      <div class="container">
+        <div class="standards-shell reveal">
+          <div class="section-heading standards-heading">
+            <div class="eyebrow" data-i18n="standardsEyebrow">Shared principles</div>
+            <h2 data-i18n="standardsTitle">A public standard for trust and transparency.</h2>
+            <p data-i18n="standardsLead">The hub makes official sources, risk information, verification routes, and project policies easy to find before any interaction.</p>
           </div>
-          <div class="row">
-            <div><strong>EnteleKRON</strong><br/><span style="color:var(--muted);font-size:.9rem;">Core ecosystem</span></div>
-            <div><a href="https://entelekron.org" target="_blank" rel="noopener">entelekron.org →</a></div>
-          </div>
-          <div class="row">
-            <div><strong>SOVRA</strong><br/><span style="color:var(--muted);font-size:.9rem;">Sovereign AI</span></div>
-            <div><a href="https://sovra.network" target="_blank" rel="noopener">sovra.network →</a></div>
-          </div>
-        </div>
 
-        <div class="note" style="margin-top:12px">
-          İletişim: <a href="mailto:hq@tvk.group">hq@tvk.group</a>
+          <div class="standards-grid">
+            <article class="standard-card"><span class="standard-number">01</span><h3 data-i18n="standardTransparencyTitle">Transparent information</h3><p data-i18n="standardTransparencyText">Official domains, disclosures, and project information remain clearly identifiable.</p></article>
+            <article class="standard-card"><span class="standard-number">02</span><h3 data-i18n="standardVerificationTitle">Verification before action</h3><p data-i18n="standardVerificationText">Users are directed to verify contract addresses and official links before connecting or transacting.</p></article>
+            <article class="standard-card"><span class="standard-number">03</span><h3 data-i18n="standardPolicyTitle">Published project policy</h3><p data-i18n="standardPolicyText">Announcements, lock information, and relevant procedures should be communicated publicly.</p></article>
+            <article class="standard-card"><span class="standard-number">04</span><h3 data-i18n="standardMigrationTitle">Future-ready structure</h3><p data-i18n="standardMigrationText">Projects may evolve toward future EnteleKRON infrastructure subject to published technical plans.</p></article>
+          </div>
         </div>
       </div>
-    </aside>
+    </section>
+
+    <section class="section compact" id="verify">
+      <div class="container">
+        <div class="verify-panel reveal">
+          <div class="verify-copy">
+            <div class="eyebrow" data-i18n="verifyEyebrow">Verification center</div>
+            <h2 data-i18n="verifyTitle">Never trust a copied address. Verify at the official source.</h2>
+            <p data-i18n="verifyLead">Open each project’s official verification page directly from this hub. Confirm the domain and contract information before connecting a wallet or transferring assets.</p>
+            <span class="verify-notice" data-i18n="verifyNotice">Only use links published by official KRON channels</span>
+          </div>
+          <div class="verify-actions">
+            <a class="btn btn-primary" href="https://ekron.network/verify/">eKRON <span data-i18n="verifyButton">Verify</span></a>
+            <a class="btn" href="https://minekron.com/verify/">mineKRON <span data-i18n="verifyButton">Verify</span></a>
+            <a class="btn" href="https://sovikron.com/verify/">soviKRON <span data-i18n="verifyButton">Verify</span></a>
+            <a class="btn" href="https://alvikron.com/verify/">alviKRON <span data-i18n="verifyButton">Verify</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <span>© Kron Family Hub • EnteleKRON Ecosystem</span>
-    <span>Bilgilendirme amaçlıdır • Finansal tavsiye değildir</span>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy"><span class="brand-title">KRON Family</span><span class="brand-subtitle">EnteleKRON Ecosystem</span></span>
+        </a>
+        <p data-i18n="footerTagline">The official multilingual gateway for KRON Family projects, verification resources, and public ecosystem standards.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/legal/terms.html" data-i18n="terms">Terms of Use</a>
+        <a href="/legal/privacy.html" data-i18n="privacy">Privacy Policy</a>
+        <a href="/legal/risk.html" data-i18n="risk">Risk Disclosure</a>
+        <a href="mailto:hq@tvk.group" data-i18n="contact">Contact</a>
+        <a href="https://entelekron.org">EnteleKRON ↗</a>
+        <a href="https://tvk.group">TVK Group ↗</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-current-year></span> KRON Family · EnteleKRON Ecosystem</span>
+      <span data-i18n="footerDisclaimer">Information only. Not financial or investment advice.</span>
+    </div>
   </footer>
-</div>
+
+  <script src="/assets/i18n.js?v=20260801" defer></script>
+  <script src="/assets/site.js?v=20260801" defer></script>
 </body>
 </html>
